@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "jspdf": "^4.2.1",
     "react-hook-form": "^7.90.0",
-    "react-router-dom": "^7.18.4"
+    "react-router-dom": "^7.18.4",
+    "tailwindcss": "^4.3.3"
   }
 }
