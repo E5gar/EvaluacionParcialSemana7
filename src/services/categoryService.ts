@@ -4,7 +4,7 @@ import { KEYS, getAll, saveAll, uid } from './storage'
 export type CategoryData = Omit<Category, 'id'>
 
 export function getCategories(): Category[] {
-  return getAll<Category>(KEYS.categories)
+  return getAll<Category>(KEYS.categories).sort((a, b) => a.name.localeCompare(b.name, 'es'))
 }
 
 function normalize(name: string): string {
