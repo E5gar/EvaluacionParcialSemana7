@@ -1,0 +1,36 @@
+.comprobante {
+  max-width: 56ch;
+  padding: var(--space-m);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+}
+
+.codigo {
+  margin-block: var(--space-s) var(--space-m);
+  font-size: var(--fs-h-l);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
+}
+
+.resumen {
+  border-top: 1px solid var(--border);
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding-block: var(--space-s);
+  border-bottom: 1px solid var(--border);
+}
+
+.fila dt {
+  color: var(--text-muted);
+}
+
+.fila dd {
+  font-weight: 500;
+  text-align: right;
+}

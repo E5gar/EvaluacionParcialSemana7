@@ -1,0 +1,18 @@
+.titulo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin-top: var(--space-m);
+}
+
+.vacio {
+  padding-block: var(--space-m);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
