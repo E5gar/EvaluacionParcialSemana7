@@ -1,0 +1,33 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.etiquetaCampo {
+  display: block;
+}
+
+.control {
+  width: 100%;
+  padding: var(--space-xs) 0;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 30%, transparent);
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
+  font-size: var(--fs-body-l);
+  font-weight: 300;
+  transition: border-color var(--t-regular);
+}
+
+.control:focus,
+.control[aria-invalid='true'] {
+  outline: none;
+  border-bottom-color: var(--text);
+}
+
+.mensajeError {
+  font-size: var(--fs-body-xs);
+  font-weight: 500;
+}
