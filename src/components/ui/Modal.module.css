@@ -1,0 +1,46 @@
+.fondoModal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: var(--page-margin);
+  background: color-mix(in srgb, var(--color-dark) 55%, transparent);
+}
+
+.panel {
+  width: 100%;
+  max-width: 56ch;
+  max-height: 100%;
+  overflow-y: auto;
+  padding: var(--space-m);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  margin-bottom: var(--space-m);
+}
+
+.cerrar {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: transparent;
+  font-size: var(--fs-body-xl);
+  cursor: pointer;
+  transition: background var(--t-regular);
+}
+
+.cerrar:hover {
+  background: var(--tag-bg);
+}
