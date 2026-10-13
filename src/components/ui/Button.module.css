@@ -1,0 +1,81 @@
+.boton {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.35em 0.35em 0.35em 1.3em;
+  border: 1px solid var(--borde);
+  border-radius: var(--radius-pill);
+  background: var(--fondo-boton);
+  color: var(--texto-boton);
+  font: 500 var(--fs-body-s) / 1 var(--font-main);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fondo {
+  position: absolute;
+  z-index: -1;
+  top: 0.35em;
+  right: 0.35em;
+  bottom: 0.35em;
+  width: 2.4em;
+  border-radius: var(--radius-pill);
+  background: var(--fondo-circulo);
+  transition: width var(--t-long);
+}
+
+.texto {
+  transition: color var(--t-regular);
+}
+
+.icono {
+  display: grid;
+  place-items: center;
+  width: 2.4em;
+  height: 2.4em;
+  color: var(--color-circulo);
+  transition: transform var(--t-regular);
+}
+
+.boton:hover:not(:disabled) .fondo {
+  width: calc(100% - 0.7em);
+}
+
+.boton:hover:not(:disabled) .texto {
+  color: var(--color-circulo);
+}
+
+.boton:hover:not(:disabled) .icono {
+  transform: rotate(45deg);
+}
+
+.boton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.primario {
+  --borde: var(--text);
+  --fondo-boton: var(--text);
+  --texto-boton: var(--bg);
+  --fondo-circulo: var(--bg);
+  --color-circulo: var(--text);
+}
+
+.contorno {
+  --borde: color-mix(in srgb, var(--text) 40%, transparent);
+  --fondo-boton: transparent;
+  --texto-boton: var(--text);
+  --fondo-circulo: var(--text);
+  --color-circulo: var(--bg);
+}
+
+.acento {
+  --borde: var(--color-accent);
+  --fondo-boton: var(--color-accent);
+  --texto-boton: var(--color-dark);
+  --fondo-circulo: var(--color-dark);
+  --color-circulo: var(--color-accent);
+}
