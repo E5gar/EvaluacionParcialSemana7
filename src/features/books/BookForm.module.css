@@ -1,0 +1,22 @@
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-m) var(--gap);
+}
+
+.completo {
+  grid-column: 1 / -1;
+}
+
+.acciones {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+@media (max-width: 960px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+}
