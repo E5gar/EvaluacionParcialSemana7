@@ -1,0 +1,21 @@
+.titulo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-xs);
+}
+
+.mensaje {
+  margin-bottom: var(--space-m);
+  padding-block: var(--space-s);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--fs-body-s);
+  font-weight: 500;
+}
