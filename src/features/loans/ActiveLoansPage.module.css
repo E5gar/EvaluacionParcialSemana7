@@ -1,0 +1,22 @@
+.titulo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.vacio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-s);
+  padding-block: var(--space-m);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap);
+}

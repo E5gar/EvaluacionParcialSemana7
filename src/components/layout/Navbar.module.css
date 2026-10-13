@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: var(--nav-height);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 0 20px 20px;
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  height: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--page-margin);
+}
+
+.marca {
+  font-size: var(--fs-body-xl);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-l);
+}
+
+.lista {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-l);
+}
+
+.usuario {
+  font-size: var(--fs-body-xs);
+  color: var(--text-muted);
+}
+
+.enlace {
+  position: relative;
+  display: inline-block;
+  font-size: var(--fs-body-s);
+  font-weight: 300;
+  transition: font-weight var(--t-regular);
+}
+
+.enlace::after {
+  content: attr(data-texto);
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: 600;
+}
+
+.enlace:hover,
+.activo {
+  font-weight: 600;
+}
+
+.activo {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.4em;
+}
+
+.hamburguesa {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  cursor: pointer;
+}
+
+.linea {
+  width: 45%;
+  height: 1px;
+  background: var(--text);
+}
+
+@media (max-width: 960px) {
+  .hamburguesa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-m);
+    padding: var(--space-m) var(--page-margin);
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .navAbierto {
+    display: flex;
+  }
+
+  .lista {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-s);
+  }
+}

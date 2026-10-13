@@ -1,4 +1,13 @@
-export default function App() {
-  return <h1 className="p-4 text-2xl font-bold">Base lista</h1>
-}
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import AppRoutes from './routes/AppRoutes';
 
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
+    </BrowserRouter>
+  );
+}

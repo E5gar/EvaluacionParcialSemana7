@@ -1,0 +1,29 @@
+.pagina {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  padding: var(--page-margin);
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  width: 100%;
+  max-width: 44ch;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.accion {
+  align-self: flex-start;
+}
+
+.ayuda {
+  font-size: var(--fs-body-xs);
+  color: var(--text-muted);
+}
