@@ -1,0 +1,32 @@
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid var(--border);
+}
+
+.encabezado {
+  padding-block: var(--space-s);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.fila {
+  transition: background var(--t-regular);
+}
+
+.fila:hover {
+  background: var(--tag-bg);
+}
+
+.celda {
+  padding-block: var(--space-s);
+  padding-inline-end: var(--gap);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--fs-body-s);
+  vertical-align: middle;
+}
+
+.acciones {
+  text-align: right;
+  white-space: nowrap;
+}
