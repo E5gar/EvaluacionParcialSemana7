@@ -1,7 +1,3 @@
-export default function LoginPage() {
-  return <div>LoginPage</div>
-}
-
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Navigate } from 'react-router-dom'
