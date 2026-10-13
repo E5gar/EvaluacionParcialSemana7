@@ -1,0 +1,10 @@
+.tarjeta {
+  padding: var(--space-s);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  transition: border-color var(--t-regular);
+}
+
+.tarjeta:hover {
+  border-color: color-mix(in srgb, var(--text) 50%, transparent);
+}
